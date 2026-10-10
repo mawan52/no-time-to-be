@@ -1,0 +1,62 @@
+<div class="scene-root saturday-scene">
+  <div class="scene-fragment">
+    <h1 class="glitch-text" data-text="Good morning?">Good morning?</h1>
+    <h2>Saturday, 24th October 2026</h2>
+    <p>You woke up at 11:15 AM feeling more tired than when you went to bed.</p>
+    <button class="next-fragment">Check to-do list</button>
+  </div>
+
+  <div class="scene-fragment">
+    <p>You thought Saturday was for rest, hobbies, and personal projects...</p>
+    <button class="next-fragment">Open Saturday Tasks</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h1>Saturday Tasks (14 pending)</h1>
+    <div class="stress-bar-container">
+      <div class="stress-bar-fill saturday-stress-bar"></div>
+    </div>
+    <ul class="saturday-task-list">
+      <li>Study Chemistry Chapters 4 & 5</li>
+      <li>Fix bug in GitHub repository</li>
+      <li>Prepare History presentation slides</li>
+      <li>Clean room & laundry</li>
+      <li>Read 30 pages of self-development book</li>
+      <li>Reply to 18 unread messages</li>
+      <li>Drink 2L of water</li>
+      <li>Go to gym (Leg day)</li>
+      <li>Apply for summer internship</li>
+      <li>Update portfolio website</li>
+      <li>Prep meals for next week</li>
+      <li>Organize Notion workspace</li>
+    </ul>
+    <button class="next-fragment" data-action="startSaturdayChaos">Start clearing tasks</button>
+  </div>
+
+  <div class="scene-fragment">
+    <p>Try to click on the tasks to clear them...</p>
+    <div class="horiz saturday-task-buttons" style="margin-top: 1.2rem;">
+      <button class="evasive-saturday" data-action="onTaskClick">Study Chemistry</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Fix GitHub Bug</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Clean Room</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Read Book</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Reply to 18 Messages</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Go to Gym</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Apply for Internship</button>
+      <button class="evasive-saturday" data-action="onTaskClick">Update Portfolio</button>
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <button class="next-fragment cursed-btn" style="width: 100%;">
+        I can't keep up... (Give Up)
+      </button>
+    </div>
+  </div>
+
+  <div class="scene-fragment saturday-overwhelmed-msg">
+    <h2>Saturday, 8:40 PM</h2>
+    <p style="color: #ff8888;">The notifications won't stop. Every time you finish one thing, two more take its place.</p>
+    <p>You haven't left your desk all day.</p>
+    <button data-action="nextScene" class="cursed-btn" style="margin-top: 1rem;">Survive until Sunday...</button>
+  </div>
+</div>

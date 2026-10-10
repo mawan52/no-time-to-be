@@ -1,0 +1,75 @@
+<div class="scene-root goodmorning-scene">
+  <div class="scene-fragment">
+    <div class="header">
+      <h1>Good morning.</h1>
+      <h2>Wednesday, 21st October 2026</h2>
+      <p>Let's get started with today's tasks.</p>
+    </div>
+
+    <button class="next-fragment">
+      Start the day
+    </button>
+  </div>
+
+  <div class="scene-fragment">
+    <h1>Today's tasks</h1>
+    <ul>
+      <li>Go to School</li>
+      <li>Do homework</li>
+      <li>Work on project</li>
+      <li>Gym</li>
+    </ul>
+    <button class="next-fragment">
+      Begin Task 1
+    </button>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 1: Go to School 🚌</h3>
+    <p>Drag the slider to commute: <strong class="school-distance-txt">0%</strong></p>
+    <input type="range" min="0" max="100" value="0" class="school-slider" data-action="onSchoolSlider" style="width: 100%; margin: 1rem 0;">
+    <div class="school-action-container">
+      <button class="next-fragment school-complete-btn" style="display: none;">Arrived at School</button>
+    </div>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 2: Do Homework 📝</h3>
+    <p>Solve: <strong>14 + 18 = ?</strong></p>
+    <div style="display: flex; gap: 0.8rem; margin: 1rem 0; align-items: center;">
+      <input type="number" placeholder="Enter answer..." class="homework-input" style="padding: 0.7rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(0,0,0,0.4); color: #fff; width: 140px; font-size: 1rem;">
+      <button data-action="submitHomework">Submit Answer</button>
+    </div>
+    <div class="homework-action-container">
+      <button class="next-fragment homework-complete-btn" style="display: none;">Homework Complete</button>
+    </div>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 3: Work on Project 💻</h3>
+    <p>Push code commits to repository</p>
+    <div style="margin: 1rem 0;">
+      <button data-action="commitProject" class="project-commit-btn">git commit -m "feat" (0/3)</button>
+    </div>
+    <div class="project-action-container">
+      <button class="next-fragment project-complete-btn" style="display: none;">Project Pushed</button>
+    </div>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 4: Gym Workout 🏋️</h3>
+    <p>Reps completed: <strong class="gym-rep-txt">0/5</strong></p>
+    <div style="margin: 1rem 0;">
+      <button data-action="doRep" class="gym-rep-btn">Do Pushup 🏋️</button>
+    </div>
+    <div class="gym-action-container">
+      <button class="next-fragment gym-complete-btn" style="display: none;">Workout Complete</button>
+    </div>
+  </div>
+
+  <div class="scene-fragment">
+    <h1>You completed everything today.</h1>
+    <p>Good Job!</p>
+    <button data-action="nextScene" style="border-color: #7ee787; color: #7ee787;">Continue to Thursday</button>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="scene-root thursday-scene">
+  <div class="scene-fragment">
+    <h1>Good morning.</h1>
+    <h2>Thursday, 22nd October 2026</h2>
+    <p>A few more tasks today. Let's stay focused.</p>
+    <button class="next-fragment">Start Thursday</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h1>Today's Tasks</h1>
+    <ul>
+      <li>Study Chemistry</li>
+      <li>Do assignment</li>
+      <li>Reply to messages</li>
+      <li>Exercise</li>
+    </ul>
+    <button class="next-fragment" data-action="startNotifications">Begin Tasks</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 1: Study Chemistry 🧪</h3>
+    <p>Focus Level: <strong class="study-focus-txt">0%</strong></p>
+    <input type="range" min="0" max="100" value="0" class="study-focus-slider" data-action="onFocusSlider" style="width: 100%; margin: 1rem 0;">
+    <button class="next-fragment study-complete-btn" style="display: none;">Finished Studying</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 2: Do Assignment 📄</h3>
+    <p>Upload file: <code>chemistry_lab_report_v2.pdf</code></p>
+    <div style="margin: 1rem 0;">
+      <button data-action="uploadAssignment" class="assignment-upload-btn">📁 Select File & Upload</button>
+    </div>
+    <button class="next-fragment assignment-complete-btn" style="display: none;">Assignment Uploaded</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 3: Reply to Messages 💬</h3>
+    <p>Ahmed: <em>"are you free later tonight?"</em></p>
+    <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1rem 0;">
+      <button data-action="sendReply">"Yeah sure!"</button>
+      <button data-action="sendReply">"Maybe after studying"</button>
+      <button data-action="sendReply">"Busy tonight sorry"</button>
+    </div>
+    <button class="next-fragment reply-complete-btn" style="display: none;">Message Sent</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h3>Task 4: Exercise 🏃</h3>
+    <p>Jump rope counter: <strong class="exercise-count-txt">0/4</strong></p>
+    <div style="margin: 1rem 0;">
+      <button data-action="doJumpRope" class="jumprope-btn">Jump Rope 🪢</button>
+    </div>
+    <button class="next-fragment exercise-complete-btn" style="display: none;">Workout Finished</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h1>You completed everything today.</h1>
+    <p>Good Work!</p>
+    <button data-action="nextScene" style="border-color: #7ee787; color: #7ee787;">Continue to Friday</button>
+  </div>
+</div>

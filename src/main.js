@@ -1,11 +1,9 @@
-import stateManager from "./core/sceneManager"
-import taskManager from "./core/taskManager"
+import stateManager from "./core/sceneManager";
 
 async function main() {
   stateManager.initSceneManager();
-  await stateManager.loadScene("goodmorning");
-  let cleanId = taskManager.addTask("clean the wound");
-  taskManager.tickTask(cleanId);
+  // Starts on Wednesday for the full interactive story progression
+  await stateManager.loadScene("wednesday");
 }
 
 main();

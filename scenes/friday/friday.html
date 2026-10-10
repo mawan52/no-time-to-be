@@ -1,0 +1,88 @@
+<div class="scene-root">
+  <div class="scene-fragment">
+    <h1>Good morning.</h1>
+    <h2>Friday, 23rd October 2026</h2>
+    <p>You made it to Friday. Weekend is almost here, right?</p>
+    <button class="next-fragment">Yeah, finally.</button>
+  </div>
+
+  <div class="scene-fragment">
+    <p>Let's just get through todays list. Should'nt be much of a hassle.</p>
+    <button class="next-fragment">Let's do this.</button>
+  </div>
+
+  <div class="scene-fragment">
+    <h1>Today's tasks</h1>
+    <ul>
+      <li>Go to school</li>
+      <li>Finish maths homework</li>
+      <li>Study for chemistry test</li>
+      <li>Finish group project</li>
+      <li>Prepare history presentation</li>
+      <li>Reply to unread messages</li>
+      <li>Clean room</li>
+      <li>Gym workout</li>
+      <li>Work on personal project</li>
+      <li>Plan next week</li>
+    </ul>
+    <button class="next-fragment">Get to work</button>
+  </div>
+
+  <div class="horiz">
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Go to school</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Maths homework</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Chemistry study</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Group project</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">History presentation</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Reply to messages</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Clean room</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Gym workout</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Personal project</button>
+    </div>
+    <div class="scene-fragment">
+      <button class="next-fragment" data-action="onTaskClick">Plan next week</button>
+    </div>
+  </div>
+
+  <div class="scene-fragment">
+    <h2>Friday, 11:47 PM</h2>
+    <p>You finished today's checklist. It was a lot more than expected. You're exhausted.</p>
+    <button class="next-fragment">Time to sleep</button>
+  </div>
+
+  <div class="scene-fragment">
+    <p>You close your eyes to rest...</p>
+    <button data-action="ahmedInterrupts" class="next-fragment">Go to bed</button>
+  </div>
+
+  <div class="scene-fragment friday-interruption" style="border-color: var(--accent-red);">
+    <p style="color: #ff9999;"><strong>Ping!</strong> Ahmed sent 4 audio messages and a picture of Problem #7.</p>
+    <p><em>"Yo bro could you help me out real quick? I can't seem to understand the math homework due tomorrow morning!"</em></p>
+    <div class="horiz" style="margin-top: 1rem;">
+      <button class="next-fragment" data-action="acceptAhmed">Help Ahmed with math</button>
+      <button class="evasive-btn-mild next-fragment" data-action="acceptAhmed">Ignore and sleep</button>
+    </div>
+  </div>
+
+  <div class="scene-fragment">
+    <p>You finish helping Ahmed at 2:15 AM. You remember you haven't reviewed tomorrow's schedule...</p>
+    <button data-action="nextScene">Continue to Saturday...</button>
+  </div>
+</div>
