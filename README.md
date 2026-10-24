@@ -1,6 +1,12 @@
 <div align="center">
 <img src="branding/nttb_logo.png" alt="No Time to Be logo" width="220" />
+
+🏆 **Winner of the Ulli Crespo START-Kunstpreis 2026**
 </div>
+
+> *"I wanted to encourage reflection on how often we are so busy fulfilling expectations and working through tasks that we forget to simply live."*
+
+---
 
 No Time to Be is an interactive digital art experience depicting the constant pressure placed on today's teenagers to constantly deliver.
 
